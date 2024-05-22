@@ -1,4 +1,6 @@
-# Team Project '22
+# Team Project 2022: GeoQuiz
+
+#### Disclaimer: This project was originally created and completed on GitLab.
 
 ##### Introduction
 
@@ -39,7 +41,7 @@ After creating the new server you need to ssh to your server using local machine
 apt install -y gitlab-runner
 ```
 
-Regiter your Gitlab runner token like below
+Regiter your GitLab runner token as shown below
 
 ```bash
 gitlab-runner register --url https://git.cs.bham.ac.uk/ --registration-token $REGISTRATION_TOKEN
@@ -47,7 +49,7 @@ gitlab-runner register --url https://git.cs.bham.ac.uk/ --registration-token $RE
 
 ##### Database cluster
 
-Once created a new server, add a database cluster on DigitalOcean with following specs
+Once you have created a new server, add a database cluster on DigitalOcean with following specs
 
 ```bash
 1 GB / 10 GB Disk / LON1 - MySQL 8
@@ -161,7 +163,7 @@ e2e:
 
 ```
 
-Enable nodejs (for build) and selenium/standalone-chrome (for automated testing) images on docker.
+Enable Node.js (for build) and selenium/standalone-chrome (for automated testing) images on docker.
 
 ##### CI variables
 
@@ -180,4 +182,4 @@ You need to create following CI variables on Gitlab.
 * SSH_PRIVATE_KEY - ssh private key from server machine
 * DOMAIN - domain of your web application
 
-After following above instructions, you are good to go. Make some changes on our app !
+After following the instructions above, you are good to go. Make some changes on our app!
